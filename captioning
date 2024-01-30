@@ -9,7 +9,7 @@ classes = []
 with open("C:/Users/SOUMILI/Desktop/codesoft/coco (2).names", "r") as f:
     classes = f.read().strip().split("\n")
 
-image = cv2.imread("C:/Users/SOUMILI/Desktop/codesoft/photo_6177144303411903418_y.jpg")
+image = cv2.imread("C:/Users/SOUMILI/Desktop/codesoft/photo_6181459087687006503_y.jpg")
 
 blob = cv2.dnn.blobFromImage(image, 0.00392, (416, 416), (0, 0, 0), True, crop=False)
 net.setInput(blob)
